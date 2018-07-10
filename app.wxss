@@ -1,0 +1,3 @@
+@import "style/weui.wxss";
+@import "style/mina.wxss";
+@import "style/minasites.wxss";
