@@ -1,6 +1,7 @@
 const app = getApp();
 
-function savePicToAlbum(tempFilePath) {
+function savePicToAlbum(tempFilePath, params) {
+    params = params || {};
     let that = this;
     wx.getSetting({
         success(res) {
@@ -15,6 +16,9 @@ function savePicToAlbum(tempFilePath) {
                                     title: '成功保存图片',
                                     content: '已成功为您保存图片到手机相册，请自行前往朋友圈分享',
                                     confirmText: '知道了',
+                                    confirm: res => {
+                                        typeof params.confirm == 'function' && params.confirm(res);
+                                    }
                                 });
                             },
                             fail(res) {
@@ -42,6 +46,9 @@ function savePicToAlbum(tempFilePath) {
                             title: '成功保存图片',
                             content: '已成功为您保存图片到手机相册，请自行前往朋友圈分享',
                             confirmText: '知道了',
+                            confirm: res => {
+                                typeof params.confirm == 'function' && params.confirm(res);
+                            }
                         });
                     },
                     fail(res) {

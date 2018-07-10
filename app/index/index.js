@@ -4,11 +4,7 @@ Page({
      * 页面的初始数据
      */
     data: {
-        imageList: [{
-            url: '',
-            title: "Is me!",
-            time: "2018-06-26"
-        }]
+        num: 1
     },
 
     /**
@@ -58,6 +54,11 @@ Page({
      */
     onReachBottom: function() {
 
+    },
+
+    numChange(e) {
+        const num = e.detail;
+        console.log(num)
     },
 
     /**
