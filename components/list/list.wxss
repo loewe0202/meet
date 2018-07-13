@@ -6,5 +6,5 @@
  */
 
 :host {
-    color: yellow;
+    color: #0AF2EB;
 }
