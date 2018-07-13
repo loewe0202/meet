@@ -4,7 +4,11 @@ Page({
      * 页面的初始数据
      */
     data: {
-        num: 1
+        dataFieldA: 'loewe0202',
+        dataFieldB: {
+            author: 'loewe0202',
+            date: '2018/07/12 18:00'
+        }
     },
 
     /**
@@ -54,11 +58,6 @@ Page({
      */
     onReachBottom: function() {
 
-    },
-
-    numChange(e) {
-        const num = e.detail;
-        console.log(num)
     },
 
     /**

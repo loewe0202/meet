@@ -1,5 +1,6 @@
 <!-- 这是自定义组件的内部WXML结构 -->
 <view class="inner">
-    {{innerText}}
-    <slot></slot>
+    <slot name="before"></slot>
+    <view>这里是组件的内部细节 -- {{propB.date}}</view>
+    <slot name="after"></slot>
 </view>
