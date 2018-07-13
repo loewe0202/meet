@@ -27,7 +27,13 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function() {
-        broadcast.fire('showRidingName', { name: 'loewe' });
+
+    },
+
+    fireEvent(data, eventName) { // 触发
+        broadcast.fire('eventA', {
+            name: 'loewe'
+        })
     },
 
     /**

@@ -1,3 +1,5 @@
+import broadcast from "../../utils/broadcast.js";
+
 Page({
 
     /**
@@ -26,6 +28,24 @@ Page({
      */
     onShow: function() {
 
+    },
+
+    regEvent() {
+        let that = this;
+        broadcast.on('eventA', function(data, eventName) { // 绑定
+            // once 只触发一次
+            console.log('fire event :', eventName, data);
+            that.setData({
+                info: data
+            })
+        })
+        wx.showToast({
+            title: '注册成功',
+            icon: 'success'
+        })
+        this.setData({
+            reg: true
+        })
     },
 
     /**

@@ -1,0 +1,2 @@
+<view class="h2">使用 broadcast.js 跨页面通信</view>
+<button type="primary" bindtap="regEvent">注册事件A</button>
