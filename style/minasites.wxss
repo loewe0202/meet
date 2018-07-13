@@ -124,6 +124,7 @@
     background-color: #d8d8d8;
 }
 
+
 /*font*/
 
 .font-size-10 {
@@ -284,7 +285,9 @@
     text-align: left;
 }
 
+
 /*margin*/
+
 
 /*padding*/
 
@@ -946,6 +949,7 @@
     top: 0;
 }
 
+
 /*border*/
 
 .border-primary {
@@ -1116,7 +1120,9 @@
     border-top: 1px solid #eee;
 }
 
+
 /*width*/
+
 
 /*height*/
 
@@ -1131,6 +1137,7 @@
 .height-100-vh {
     height: 100vh;
 }
+
 
 /*z-index*/
 
@@ -1158,6 +1165,7 @@
     word-wrap: break-word;
     word-break: break-all;
 }
+
 
 /*footer*/
 
