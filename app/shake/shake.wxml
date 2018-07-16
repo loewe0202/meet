@@ -1,0 +1,5 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="padding-24r text-align-center font-size-36r">当前摇一摇次数{{num}}</view>
+    </view>
+</view>

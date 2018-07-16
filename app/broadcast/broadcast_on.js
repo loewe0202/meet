@@ -1,3 +1,6 @@
+import broadcast from "../../utils/broadcast.js";
+const app = getApp();
+
 Page({
 
     /**
@@ -28,6 +31,31 @@ Page({
 
     },
 
+    regEvent() {
+        let that = this;
+        broadcast.on('eventA', that.eventAFn.bind(that)); // 绑定, once 只触发一次
+        wx.showToast({
+            title: '注册成功',
+            icon: 'success'
+        })
+        this.setData({
+            reg: true
+        })
+    },
+
+    eventAFn(data, eventName) {
+        console.log('fire event :', eventName, data);
+        this.setData({
+            info: data
+        })
+    },
+
+    /**
+     * 页面跳转
+     */
+    goNext() {
+        app.turnToPage("/app/broadcast/broadcast_fire");
+    },
 
     /**
      * 生命周期函数--监听页面隐藏

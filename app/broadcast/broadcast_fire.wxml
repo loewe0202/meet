@@ -1,0 +1,8 @@
+<view class="page">
+    <view class="page__bd">
+        <text class="padding-x-15">使用 broadcast.js 跨页面通信</text>
+        <view class="weui-btn-area">
+            <button type="primary" bindtap="fireEvent">触发事件A（注意看控制台）</button>
+        </view>
+    </view>
+</view>

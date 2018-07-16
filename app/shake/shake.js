@@ -1,11 +1,14 @@
+import shakeJs from "../../utils/shake.js";
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        num: 0
     },
+
+    shakeShow: false,
 
     /**
      * 生命周期函数--监听页面加载
@@ -25,15 +28,33 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function() {
-
+        let that = this;
+        that.shakeShow = true;
+        shakeJs({
+            success: () => {
+                that.shakeFn();
+            }
+        }, that);
     },
 
+    shakeFn() {
+        wx.vibrateShort();
+        wx.playBackgroundAudio({
+            dataUrl: 'http://fjyd.sc.chinaz.com/files/download/sound1/201410/5018.mp3',
+            title: 'weixin'
+        })
+        let num = ++this.data.num;
+        this.setData({
+            num
+        })
+        return false;
+    },
 
     /**
      * 生命周期函数--监听页面隐藏
      */
     onHide: function() {
-
+        this.isShow = false;
     },
 
     /**

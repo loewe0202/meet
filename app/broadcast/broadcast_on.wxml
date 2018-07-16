@@ -1,0 +1,10 @@
+<view class="page">
+    <view class="page__bd">
+        <text class="padding-x-15">使用 broadcast.js 跨页面通信</text>
+        <view class="padding-x-15 color-99 font-size-26r">先注册事件A，然后前往fire页面触发相应事件</view>
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="regEvent">注册事件A</button>
+            <button class="weui-btn" type="primary" bindtap="goNext">触发事件fire页面</button>
+        </view>
+    </view>
+</view>

@@ -1,12 +1,24 @@
-import broadcast from "../../utils/broadcast.js";
-
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        pageList: [{
+            type: 'inapp',
+            size: 'list',
+            list: [{
+                title: '多页面通信',
+                img: '',
+                subTitle: '多页面通信，broadcast.js',
+                path: '/app/broadcast/broadcast_on'
+            }, {
+                title: '摇一摇',
+                img: '',
+                subTitle: '微信摇一摇，声音+振动效果',
+                path: '/app/shake/shake'
+            }]
+        }]
     },
 
     /**
@@ -28,24 +40,6 @@ Page({
      */
     onShow: function() {
 
-    },
-
-    regEvent() {
-        let that = this;
-        broadcast.on('eventA', function(data, eventName) { // 绑定
-            // once 只触发一次
-            console.log('fire event :', eventName, data);
-            that.setData({
-                info: data
-            })
-        })
-        wx.showToast({
-            title: '注册成功',
-            icon: 'success'
-        })
-        this.setData({
-            reg: true
-        })
     },
 
     /**
