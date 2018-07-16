@@ -1,6 +1,6 @@
 <view class="page padding-x-24r padding-y-16r">
     <view class="page__bd">
-        <view class="weui-panel weui-panel_access" wx:for="{{pageList}}" wx:key="this" wx:for-item="sortList">
+        <view class="weui-panel weui-panel_access border-radius-8r" wx:for="{{pageList}}" wx:key="this" wx:for-item="sortList">
             <view class="weui-panel__bd">
                 <block wx:for="{{sortList.list}}" wx:key="this">
                     <navigator url="{{item.path}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
