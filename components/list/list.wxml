@@ -1,6 +1,9 @@
 <!-- 这是自定义组件的内部WXML结构 -->
 <view class="inner">
     <slot name="before"></slot>
+    <view>{{innerText}}</view>
     <view class="my-class" bind:tap="_updateTime" data-info="{{propB}}">这里是组件的内部细节，这段文字的颜色由组件外的class决定 -- {{propB.date}}</view>
     <slot name="after"></slot>
+    <!-- 在自定义组件中 -->
+    <button bindtap="_onTap" data-info="{{innerText}}">点击这个按钮将触发“myevent”事件</button>
 </view>

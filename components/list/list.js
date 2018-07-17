@@ -57,9 +57,19 @@ Component({
                 propB: {
                     author: 'loewe',
                     date: new Date().toLocaleString()
-                }
+                },
+                innerText: '小程序测试'
             })
+            this.replaceDataOnPath(['A', 0, 'B'], 'myPrivateData') // 这里将 data.A[0].B 设为 'myPrivateData'
+            this.applyDataUpdates();
             console.log(this.data)
+        },
+        _onTap: function(e) {
+            var myEventDetail = {
+                name: e.currentTarget.dataset.info
+            } // detail对象，提供给事件监听函数
+            var myEventOption = {} // 触发事件的选项
+            this.triggerEvent('myevent', myEventDetail, myEventOption)
         }
     },
 

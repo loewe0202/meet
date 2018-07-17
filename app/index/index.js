@@ -12,6 +12,13 @@ Page({
     },
 
     /**
+     * 组件自定义事件
+     */
+    onMyEvent: function(e) {
+        console.log(e); // 自定义组件触发事件时提供的detail对象
+    },
+
+    /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
