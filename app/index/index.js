@@ -7,7 +7,7 @@ Page({
         dataFieldA: 'loewe0202',
         dataFieldB: {
             author: 'loewe0202',
-            date: '2018/07/12 18:00'
+            date: new Date().toLocaleString()
         }
     },
 

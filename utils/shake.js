@@ -2,7 +2,7 @@
  * @Author: DESKTOP-U0JOM15\loewe0202
  * @Date:   2018-07-16 17:00:32
  * @Last Modified by:   DESKTOP-U0JOM15\loewe0202
- * @Last Modified time: 2018-07-16 17:41:18
+ * @Last Modified time: 2018-07-16 18:54:57
  */
 //定义全局变量
 let lastTime = 0; //此变量用来记录上次摇动的时间
@@ -34,13 +34,19 @@ function shake(acceleration, params) {
         }
     }
 }
-const shakeFn = function(params, self) {
-    wx.onAccelerometerChange((res) => {
-        if (self && !self.shakeShow) { // 主要针对tabBar页Bug
-            return false;
-        }
-        shake(res, params);
-    });
+const shakeFn = {
+    on: (params, self) => {
+        wx.onAccelerometerChange((res) => {
+            if (self && !self.shakeShow) { // 主要针对tabBar页Bug
+                return false;
+            }
+            shake(res, params);
+        })
+    },
+    off: (params, self) => {
+        wx.stopAccelerometer();
+    }
 }
+
 
 export default shakeFn;

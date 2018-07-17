@@ -30,7 +30,7 @@ Page({
     onShow: function() {
         let that = this;
         that.shakeShow = true;
-        shakeJs({
+        shakeJs.on({
             success: () => {
                 that.shakeFn();
             }
