@@ -5,37 +5,37 @@
         "app/me/me",
         "app/broadcast/broadcast_on",
         "app/broadcast/broadcast_fire",
-        "app/shake/shake"
+        "app/shake/shake",
+        "app/animate/animate"
     ],
-    "window":
-    {
+    "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTitleText": "遇见丨旖伊",
         "navigationBarTextStyle": "black"
     },
-    "tabBar":
-    {
+    "tabBar": {
         "color": "#000000",
         "selectedColor": "#08af35",
         "list": [
-        {
-            "pagePath": "app/index/index",
-            "text": "首页",
-            "iconPath": "./image/tabBar/home.png",
-            "selectedIconPath": "./image/tabBar/home_ac.png"
-        },
-        {
-            "pagePath": "app/sort/sort",
-            "text": "分类",
-            "iconPath": "./image/tabBar/sort.png",
-            "selectedIconPath": "./image/tabBar/sort_ac.png"
-        },
-        {
-            "pagePath": "app/me/me",
-            "text": "我的",
-            "iconPath": "./image/tabBar/me.png",
-            "selectedIconPath": "./image/tabBar/me_ac.png"
-        }]
+            {
+                "pagePath": "app/index/index",
+                "text": "首页",
+                "iconPath": "./image/tabBar/home.png",
+                "selectedIconPath": "./image/tabBar/home_ac.png"
+            },
+            {
+                "pagePath": "app/sort/sort",
+                "text": "分类",
+                "iconPath": "./image/tabBar/sort.png",
+                "selectedIconPath": "./image/tabBar/sort_ac.png"
+            },
+            {
+                "pagePath": "app/me/me",
+                "text": "我的",
+                "iconPath": "./image/tabBar/me.png",
+                "selectedIconPath": "./image/tabBar/me_ac.png"
+            }
+        ]
     }
 }

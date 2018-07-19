@@ -8,16 +8,23 @@ Page({
             type: 'inapp',
             size: 'list',
             list: [{
-                title: '多页面通信',
-                img: '',
-                subTitle: '多页面通信，broadcast.js',
-                path: '/app/broadcast/broadcast_on'
-            }, {
-                title: '摇一摇',
-                img: '',
-                subTitle: '微信摇一摇，声音+振动效果',
-                path: '/app/shake/shake'
-            }]
+                    title: '多页面通信',
+                    img: '',
+                    subTitle: '多页面通信，broadcast.js',
+                    path: '/app/broadcast/broadcast_on'
+                }, {
+                    title: '摇一摇',
+                    img: '',
+                    subTitle: '微信摇一摇，声音+振动效果',
+                    path: '/app/shake/shake'
+                },
+                {
+                    title: 'animate动画',
+                    img: '',
+                    subTitle: '微信animate动画效果展示',
+                    path: '/app/animate/animate'
+                }
+            ]
         }]
     },
 
