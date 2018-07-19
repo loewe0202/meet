@@ -18,6 +18,14 @@ Page({
         console.log(e); // 自定义组件触发事件时提供的detail对象
     },
 
+    pageEventListener1: function(e) {
+        console.log('pageEventListener1', e)
+    },
+
+    pageEventListener2: function(e) {
+        console.log('pageEventListener2', e)
+    },
+
     /**
      * 生命周期函数--监听页面加载
      */

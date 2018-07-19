@@ -1,3 +1,4 @@
+@import "style/tag.wxss";
 @import "style/weui.wxss";
 @import "style/mina.wxss";
 @import "style/minasites.wxss";

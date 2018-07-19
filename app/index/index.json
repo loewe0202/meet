@@ -1,6 +1,7 @@
 {
     "usingComponents":
     {
-        "list": "../../components/list/list"
+        "list": "../../components/list/list",
+        "small-list": "../../components/small-list/small-list"
     }
 }

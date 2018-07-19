@@ -1,0 +1,14 @@
+button {
+    line-height: 2.5;
+    border-radius: 3px;
+    font-size: 17px;
+}
+
+button::after {
+    border: none;
+}
+
+button[type="primary"] {
+    color: #fff;
+    background-color: #42a759;
+}
