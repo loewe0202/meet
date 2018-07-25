@@ -3,5 +3,6 @@
     {
         "list": "../../components/list/list",
         "small-list": "../../components/small-list/small-list"
-    }
+    },
+    "disableScroll": true
 }
