@@ -1,1 +1,3 @@
-<button style="margin: 30rpx;" type="primary" plain data-url="http://example.com/somefile.pdf" data-type="pdf" catchtap='downloadFile'>下载文件</button>
+<view class="page">
+    <button style="margin: 30rpx;" type="primary" plain data-url="http://example.com/somefile.pdf" data-type="pdf" catchtap='downloadFile'>下载文件</button>
+</view>
