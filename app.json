@@ -6,7 +6,8 @@
         "app/broadcast/broadcast_on",
         "app/broadcast/broadcast_fire",
         "app/shake/shake",
-        "app/animate/animate"
+        "app/animate/animate",
+        "app/download/download"
     ],
     "window": {
         "backgroundTextStyle": "light",

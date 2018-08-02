@@ -23,6 +23,12 @@ Page({
                     img: '',
                     subTitle: '微信animate动画效果展示',
                     path: '/app/animate/animate'
+                },
+                {
+                    title: '下载预览',
+                    img: '',
+                    subTitle: '下载预览word、excel、ppt、pdf等文件',
+                    path: '/app/download/download'
                 }
             ]
         }]
