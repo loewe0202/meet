@@ -7,7 +7,8 @@
         "app/broadcast/broadcast_fire",
         "app/shake/shake",
         "app/animate/animate",
-        "app/download/download"
+        "app/download/download",
+        "app/webscokets/webscokets"
     ],
     "window": {
         "backgroundTextStyle": "light",

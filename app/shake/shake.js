@@ -28,13 +28,13 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function() {
-        let that = this;
-        that.shakeShow = true;
+        this.shakeShow = true;
         shakeJs.on({
             success: () => {
-                that.shakeFn();
+                let pagesList = getCurrentPages(); // 获取页面栈
+                pagesList[pagesList.length - 1].shakeFn(); // 调用当前页面的shakeFn函数
             }
-        }, that);
+        }, this);
     },
 
     shakeFn() {
@@ -54,14 +54,16 @@ Page({
      * 生命周期函数--监听页面隐藏
      */
     onHide: function() {
-        this.isShow = false;
+        shakeJs.off(); // 关闭摇晃功能
+        this.shakeShow = false;
     },
 
     /**
      * 生命周期函数--监听页面卸载
      */
     onUnload: function() {
-
+        shakeJs.off(); // 关闭摇晃功能
+        this.shakeShow = false;
     },
 
     /**
