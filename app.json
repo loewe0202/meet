@@ -8,7 +8,9 @@
         "app/shake/shake",
         "app/animate/animate",
         "app/download/download",
-        "app/webscokets/webscokets"
+        "app/webscokets/webscokets",
+        "app/wifi/wifi",
+        "app/wifi/QRCode/QRCode"
     ],
     "window": {
         "backgroundTextStyle": "light",

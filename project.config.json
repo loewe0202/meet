@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -44,7 +44,25 @@
 				{
 					"id": -1,
 					"name": "webscokets",
-					"pathName": "app/webscokets/webscokets"
+					"pathName": "app/webscokets/webscokets",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wifi",
+					"pathName": "app/wifi/wifi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "QRCode",
+					"pathName": "app/wifi/QRCode/QRCode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "app/sort/sort"
 				}
 			]
 		}
