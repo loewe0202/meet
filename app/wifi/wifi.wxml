@@ -1,0 +1,25 @@
+<view class="page">
+    <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" bind:tap="linkWifi">扫一扫连wifi</button>
+    </view>
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd">状态：{{ connectWifi.SSID ? '已连接' : '未连接' }}</view>
+        <view class="weui-panel__bd" wx:if="{{connectWifi.SSID}}">
+            <view class="weui-media-box weui-media-box_text">
+                <view class="weui-media-box__desc">名称：{{connectWifi.SSID}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" bind:tap="getWifiList">获取wifi信息</button>
+    </view>
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd">点击分享列表wifi</view>
+        <view class="weui-cells weui-cells_after-title" wx:for="{{wifiList}}" wx:key="this">
+            <view class="weui-cell weui-cell_access {{ item.autoJoined ? 'theme-bg' : '' }}" data-info="{{item}}" bind:tap="shareWifi">
+                <view class="weui-cell__bd">{{item.SSID}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">{{item.BSSID}}</view>
+            </view>
+        </view>
+    </view>
+</view>

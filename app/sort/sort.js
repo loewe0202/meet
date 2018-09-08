@@ -29,6 +29,12 @@ Page({
                     img: '',
                     subTitle: '下载预览word、excel、ppt、pdf等文件',
                     path: '/app/download/download'
+                },
+                {
+                    title: 'wifi相关',
+                    img: '',
+                    subTitle: 'wifi连接，共享',
+                    path: '/app/wifi/wifi'
                 }
             ]
         }]
