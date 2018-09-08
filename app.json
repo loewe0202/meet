@@ -8,7 +8,8 @@
         "app/shake/shake",
         "app/animate/animate",
         "app/download/download",
-        "app/webscokets/webscokets"
+        "app/webscokets/webscokets",
+        "app/barrage/barrage"
     ],
     "window": {
         "backgroundTextStyle": "light",
