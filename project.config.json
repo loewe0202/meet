@@ -1,77 +1,82 @@
 {
-    "description": "项目配置文件。",
-    "packOptions":
-    {
-        "ignore": []
-    },
-    "setting":
-    {
-        "urlCheck": false,
-        "es6": true,
-        "postcss": true,
-        "minified": true,
-        "newFeature": true
-    },
-    "compileType": "miniprogram",
-    "libVersion": "2.2.4",
-    "appid": "wx93a9fc6ceaad35eb",
-    "projectname": "%E9%81%87%E8%A7%81%E4%B8%A8%E6%97%96%E4%BC%8A",
-    "isGameTourist": false,
-    "condition":
-    {
-        "search":
-        {
-            "current": -1,
-            "list": []
-        },
-        "conversation":
-        {
-            "current": -1,
-            "list": []
-        },
-        "plugin":
-        {
-            "current": -1,
-            "list": []
-        },
-        "game":
-        {
-            "currentL": -1,
-            "list": []
-        },
-        "miniprogram":
-        {
-            "current": 4,
-            "list": [
-            {
-                "id": -1,
-                "name": "动画",
-                "pathName": "app/animate/animate",
-                "query": ""
-            },
-            {
-                "id": -1,
-                "name": "webscokets",
-                "pathName": "app/webscokets/webscokets",
-                "query": ""
-            },
-            {
-                "id": -1,
-                "name": "wifi",
-                "pathName": "app/wifi/wifi",
-                "query": ""
-            },
-            {
-                "id": -1,
-                "name": "QRCode",
-                "pathName": "app/wifi/QRCode/QRCode",
-                "query": ""
-            },
-            {
-                "id": -1,
-                "name": "分类",
-                "pathName": "app/sort/sort"
-            }]
-        }
-    }
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.4",
+	"appid": "wx93a9fc6ceaad35eb",
+	"projectname": "%E9%81%87%E8%A7%81%E4%B8%A8%E6%97%96%E4%BC%8A",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "动画",
+					"pathName": "app/animate/animate",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "webscokets",
+					"pathName": "app/webscokets/webscokets",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wifi",
+					"pathName": "app/wifi/wifi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "QRCode",
+					"pathName": "app/wifi/QRCode/QRCode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "app/sort/sort",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "弹幕",
+					"pathName": "app/barrage/barrage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "弹幕02",
+					"pathName": "app/barrage02/barrage02"
+				}
+			]
+		}
+	}
 }
