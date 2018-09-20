@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -72,9 +72,15 @@
 					"query": ""
 				},
 				{
+					"id": 6,
+					"name": "大转盘",
+					"pathName": "app/roulette/roulette",
+					"query": ""
+				},
+				{
 					"id": -1,
-					"name": "弹幕02",
-					"pathName": "app/barrage02/barrage02"
+					"name": "大转盘02",
+					"pathName": "app/roulette02/roulette02"
 				}
 			]
 		}

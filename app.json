@@ -12,7 +12,8 @@
         "app/barrage/barrage",
         "app/wifi/wifi",
         "app/wifi/QRCode/QRCode",
-        "app/barrage02/barrage02"
+        "app/roulette/roulette",
+        "app/roulette02/roulette02"
     ],
     "window": {
         "backgroundTextStyle": "light",

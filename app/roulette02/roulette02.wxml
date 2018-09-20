@@ -1,0 +1,7 @@
+<view class="gb-wheel-container" id="gbWheel">
+    <view class="gb-wheel-content gb-wheel-run">
+        <view class="gb-wheel-line"></view>
+        <view class="gb-wheel-list"></view>
+    </view>
+    <view class="gb-wheel-btn" id="gbLottery">抽奖</view>
+</view>
